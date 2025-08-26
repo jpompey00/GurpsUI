@@ -1,0 +1,77 @@
+{
+	"information": {
+		"name":"String Value",
+		"player":"String Value",
+		"point_total": 0,
+		"unspent_points":0,
+		"height" : 0,
+		"weight":0,
+		"size_modifier": 0,
+		"age" : 0,
+		"appearance": "String Value"
+	},
+	"stats": {
+		"strength" : { "stat" : 0, "cost" : 0, "current": 0},
+		"dexterity": { "stat" : 0, "cost" : 0, "current": 0},
+		"intelligence": { "stat" : 0, "cost" : 0, "current": 0},
+		"health": { "stat" : 0, "cost" : 0, "current": 0},
+		"hit_points": { "stat" : 0, "cost" : 0, "current": 0},
+		"will": { "stat" : 0, "cost" : 0, "current": 0},
+		"perception":{ "stat" : 0, "cost" : 0, "current": 0},
+		"fatigue_points":{ "stat" : 0, "cost" : 0, "current": 0},
+		"basic_lift" : 0,
+		"basic_speed": { "stat" : 0, "cost" : 0, "current": 0},
+		"damage" : {"thrust" : 0, "swing": 0, "current": 0},
+		"basic_move": { "stat" : 0, "cost" : 0, "current": 0}
+	},
+	"encumbrance": {
+		"none" : {"basic_lift" : 0, "basic_move" : 0, "dodge" : 0},
+		"light_1": {"basic_lift" : 0, "basic_move" : 0, "dodge" : 0},
+		"medium_2": {"basic_lift" : 0, "basic_move" : 0, "dodge" : 0},
+		"heavy_3": {"basic_lift" : 0, "basic_move" : 0, "dodge" : 0},
+		"x_heavy_4": {"basic_lift" : 0, "basic_move" : 0, "dodge" : 0}
+	},
+	"languages" : [
+	{"language" : "String Value", "spoken" : "String Value", "written":"String Value", "cost": 0}
+	],
+	"culture" : {
+		"tech_level" : { "level" : 0, "cost":0},
+		"cultural_familiarity" : [{"description": "String", "cost":0}]
+		},
+	"defense_rating" : {
+		"head":0,
+		"torso": 0,
+		"arm": 0,
+		"hand": 0,
+		"leg": 0,
+		"foot": 0
+		},
+	"defense": {
+		"parry" : 0,
+		"block" : 0
+		},
+	"reaction_modifier" : {
+		"appearance" : {"description": "String", "modifier": 0},
+		"status" : {"description": "string" , "modifier" : 0},
+		"reputation" : [{"description": "string" , "modifier" : 0}]
+		},
+	"advantages_and_perks" : [
+	{ "description" : "String", "cost" : 0}
+	],
+	"disadvantages_and_quirks" : [
+	{ "description" : "String", "cost" : 0}
+	],
+	"skills" : [
+	{"name" : "String", "level" : 0, "relative_level" : 0, "cost" : 0}
+	],
+	"hand_weapons" : [
+	{"weapon" : "String", "damage" : 0, "reach": 0, "parry" : 0, "notes" : "String", "cost": 0, "weight": 0}
+	],
+	"ranged_weapons" : [
+	{"weapon" : "String", "damage" : 0, "accuracy" : 0, "range" : 0, "rate_of_fire_per_second" : 0.0, "shots" : 0, "strength" : 0, "bulk" : 0, "recoil" : 0, "notes" : "String", "cost" : 0, "weight": 0}
+	],
+	"armor_and_possesions" : [
+	{"item" : "String", "location" : "String", "cost" : 0, "weight" : 0}
+	],
+	"character_notes" : "String"
+}

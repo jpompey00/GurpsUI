@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b680mw5h60c5d"]
+
+[ext_resource type="Script" uid="uid://drw1eakftwtxx" path="res://scripts/DeserializeTest.cs" id="1_eglb3"]
+
+[node name="DeserializeTest" type="Node2D"]
+script = ExtResource("1_eglb3")
