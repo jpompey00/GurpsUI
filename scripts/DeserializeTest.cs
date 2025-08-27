@@ -32,6 +32,7 @@ public partial class DeserializeTest : Node2D
 
         //IT WORKS??
         GurpsSheetModel gurpsSheetModel = JsonSerializer.Deserialize<GurpsSheetModel>(jsonText);
+        GD.Print(gurpsSheetModel.stats.health.stat);
         // GD.Print(gurpsSheetModel.stats.fatigue_points.stat);
     }
 }
