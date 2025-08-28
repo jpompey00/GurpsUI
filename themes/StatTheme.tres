@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cgmqo3hfhihkf"]
+
+[ext_resource type="FontFile" uid="uid://u6471x0elhp4" path="res://resources/butler/Butler/Butler_Medium.otf" id="1_o7vfc"]
+
+[resource]
+default_font = ExtResource("1_o7vfc")
+RichTextLabel/font_sizes/bold_font_size = 16
+RichTextLabel/font_sizes/normal_font_size = 90
+RichTextLabel/fonts/mono_font = ExtResource("1_o7vfc")
+StatUI/base_type = &"Base"

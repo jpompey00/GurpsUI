@@ -1,0 +1,210 @@
+[gd_scene load_steps=3 format=3 uid="uid://l33wrwk5rbjt"]
+
+[ext_resource type="Theme" uid="uid://cgmqo3hfhihkf" path="res://themes/StatTheme.tres" id="1_buxjp"]
+[ext_resource type="FontFile" uid="uid://u6471x0elhp4" path="res://resources/butler/Butler/Butler_Medium.otf" id="2_tbulc"]
+
+[node name="StatContainer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 19
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Strength" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/Strength"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Strength/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "ST:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Strength/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35"
+horizontal_alignment = 1
+
+[node name="Dexterity" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/Dexterity"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Dexterity/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "DX:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Dexterity/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35"
+horizontal_alignment = 1
+
+[node name="Intelligence" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/Intelligence"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Intelligence/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "IQ:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Intelligence/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35"
+horizontal_alignment = 1
+
+[node name="Health" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/Health"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Health/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "HT:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer/Health/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HealthPoints" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3/HealthPoints"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/HealthPoints/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "HP:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/HealthPoints/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35/35"
+horizontal_alignment = 1
+
+[node name="Will" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3/Will"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/Will/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+theme_override_fonts/normal_font = ExtResource("2_tbulc")
+theme_override_font_sizes/normal_font_size = 0
+text = "WILL:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/Will/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35"
+horizontal_alignment = 1
+
+[node name="Perception" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3/Perception"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/Perception/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "PER:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/Perception/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35"
+horizontal_alignment = 1
+
+[node name="Fatigue Points" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer3/Fatigue Points"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/Fatigue Points/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "FP:"
+horizontal_alignment = 1
+
+[node name="Value" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer3/Fatigue Points/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_buxjp")
+text = "35/35"
+horizontal_alignment = 1

@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://d2ckuw3cvw81p"]
+
+[node name="information" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Name" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Name"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Name/MarginContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Name: "
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/Name"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Name/MarginContainer2"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate felis id leo rhoncus sagittis. In tincidunt, leo ac suscipit sollicitudin, tortor augue rhoncus urna, eu bibendum ligula augue sit amet nibh. Morbi in commodo ligula, a scelerisque ante. Nulla auctor mi eget turpis sodales, sed aliquam erat pulvinar. In auctor risus at nibh sagittis, ac sagittis felis luctus. Vivamus maximus purus diam, in sollicitudin metus commodo et. Phasellus nulla nisl, blandit vitae sem fringilla, ultrices gravida ex. Praesent non metus nec erat eleifend suscipit. Quisque varius, orci fermentum molestie accumsan, nunc ante sagittis odio, ac sagittis enim tellus eget enim."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Height" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Height"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/Height/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Height"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/Height/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "35ft"
+
+[node name="Weight" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Weight"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/Weight/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Weight"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/Weight/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100lbs"
+
+[node name="Hbox Container" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Size Modifier" type="MarginContainer" parent="VBoxContainer/Hbox Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Hbox Container/Size Modifier"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Hbox Container/Size Modifier/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Size Modifier: "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/Hbox Container/Size Modifier/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0"
+
+[node name="Age" type="MarginContainer" parent="VBoxContainer/Hbox Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Hbox Container/Age"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Hbox Container/Age/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Age:"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/Hbox Container/Age/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "10"
+
+[node name="Points" type="MarginContainer" parent="VBoxContainer/Hbox Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Hbox Container/Points"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Hbox Container/Points/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Points:"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/Hbox Container/Points/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "10/10"
+
+[node name="Appearance Description" type="RichTextLabel" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+text = "Appearance: Mauris vestibulum urna hendrerit placerat vestibulum. Phasellus dapibus pellentesque erat non elementum. Phasellus vel augue lectus. Sed vestibulum dictum ipsum vel placerat. Curabitur placerat, neque ut posuere ornare, tellus diam ornare diam, vitae pretium tortor mi ultricies velit. Integer et mi et enim scelerisque vehicula. Integer vehicula ut dui et gravida. Sed dui libero, rhoncus a fermentum a, interdum at dolor. Morbi pretium leo a enim cursus semper. Aenean sit amet maximus ligula. Phasellus non ex pellentesque, imperdiet mauris eu, euismod tortor. Pellentesque vel nulla faucibus, sodales urna ac, aliquet nisl. Aliquam nec leo vitae magna bibendum semper quis id purus. Vestibulum nisl sem, vestibulum vel velit eleifend, blandit efficitur nunc. Morbi ullamcorper, quam a ultrices mattis, nibh sapien laoreet justo, porta tincidunt nibh felis vel lacus. Vestibulum vulputate efficitur tellus quis vulputate."
